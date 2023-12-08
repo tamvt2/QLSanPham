@@ -19,6 +19,8 @@ define('SYSTEM', SCRIPT . 'System/');
 define('CONTROLLERS', SCRIPT . 'Application/Controllers/');
 define('MODELS', SCRIPT . 'Application/Models/');
 define('UPLOAD', SCRIPT . 'Upload/');
+define('PROT', (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on') ? 'https://' : 'http://');
+define('ROOT_URL', PROT . $_SERVER['HTTP_HOST'] . str_replace('\\', '', dirname(htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES))) . '/');
 
 // Config Database
 define('DATABASE', [

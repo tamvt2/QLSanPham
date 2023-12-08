@@ -21,7 +21,7 @@ $('#upload').change(function() {
                     results.url + '" width="100px"></a>');
                 $('#thumb').val(results.url);
             } else {
-                alert('Upload File Lỗi')
+                alert(results);
             }
         }
     });

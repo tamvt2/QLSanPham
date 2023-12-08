@@ -58,7 +58,7 @@ class ControllersProduct extends Controller {
 			$mo_ta = $this->request->request['mo_ta'];
 			$model = $this->model('product');
 			$product = $model->update($id, $name, $thumb, $gia_ban, $mo_ta, $date);
-			if ($product) {
+			if ($product == 1) {
 				header("Location: /list");
 				exit();
 			} else {
@@ -104,7 +104,7 @@ class ControllersProduct extends Controller {
 			$mo_ta = $this->request->request['mo_ta'];
 			$model = $this->model('product');
 			$product = $model->update($id, $name, $thumb, $gia_ban, $mo_ta, $date);
-			if ($product->num_rows == 1) {
+			if ($product == 1) {
 				$data = [
 					'message' => 'Cập nhật thành công',
 					'error' => false

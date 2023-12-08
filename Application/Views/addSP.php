@@ -39,7 +39,7 @@
 				</div>
 				<div class="form-group">
 					<label>Hình ảnh sản phẩm</label>
-					<input type="file" name="file" class="form-control mb-2" id="upload">
+					<input type="file" name="file" class="form-control mb-2" id="upload" value="Upload">
 					<div id="image_show"></div>
 					<input type="hidden" name="thumb" id="thumb">
 				</div>
